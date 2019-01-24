@@ -1,3 +1,7 @@
+
+packages/*/yarn.lock
+packages/*/package-lock.json
+
 # Logs
 logs
 *.log
@@ -12,7 +16,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
-.nyc_output
+junit.xml
 
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
@@ -36,3 +40,22 @@ bin/published.js
 test/**/public
 .gatsby-context.js
 .DS_Store
+public/
+node_modules/
+.cache/
+.netlify
+
+# IDE specific
+.idea/
+.vscode/
+*.sw*
+
+# misc
+.serverless/
+
+# lock files
+yarn.lock
+package-lock.json
+
+# starters are special; we want to persist the lock files
+!starters/*/package-lock.json
